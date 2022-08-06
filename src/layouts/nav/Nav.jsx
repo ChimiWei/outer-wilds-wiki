@@ -40,7 +40,7 @@ export const Nav = () => {
     return (
         <NavBar> 
             <Link to="/"><LogoImg alt="Outer Wilds" src={OWLogo}/></Link>
-            navBar
+            
             <LinkList>
                 <LinkMenu links={links}></LinkMenu>
             </LinkList>

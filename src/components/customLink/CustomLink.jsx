@@ -1,23 +1,44 @@
 import styled from "styled-components";
-import { Link, useResolvedPath, useMatch } from "react-router-dom";
+import { useNavigate, useResolvedPath, useMatch } from "react-router-dom";
+import { useCallback } from "react";
 
 
 export const CustomLink = ({ link }) => {
     const resolvedPath = useResolvedPath(link.to)
     const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+    const navigate = useNavigate();
+    const handleOnClick = useCallback(() => setTimeout(() => {navigate(link.to, {replace: true}), [navigate]}, 1000));
+
+
     return (
-        <StyledLink to={link.to} className={[link.id, (isActive ? "active" : "")]} path={link.to} >
+        <StyledLink   className={[link.id, (isActive ? "active" : "")]} path={link.to} onClick={handleOnClick} >
             {link.name}
         </StyledLink>
     )
 }
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
     display: inline-block;
     color: white;
     text-decoration: none;
     text-align: center;
     padding: 21px 12px;
+    transition: all 0.5s ease-in-out;
+    animation: fadeIn 3s;
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    :hover {
+        cursor: pointer;
+    }
 
     &.BH {
         :hover {
