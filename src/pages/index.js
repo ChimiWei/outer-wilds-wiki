@@ -4,4 +4,4 @@ export * from './GiantsDeep';
 export * from './Home';
 export * from './HourglassTwins';
 export * from './QuantumMoon';
-export * from './TheEye';
+export * from './Eye';

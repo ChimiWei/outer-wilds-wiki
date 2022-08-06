@@ -1,11 +1,12 @@
 import { Section } from "../layouts";
 import { PlanetIMG } from "../components";
-import BHpic from '../images/planets/Brittle_Hollow.jpg'
-export const BrittleHollow = () => {
+import EYEimg from '../images/planets/The_Eye.png'
+
+export const TheEye = () => {
     return (
         <>
             <Section>
-                <PlanetIMG alt="Brittle Hollow" src={BHpic} size={50}/>
+                <PlanetIMG alt="The Eye" src={EYEimg} size={35}  />
             </Section>
         </>
     )

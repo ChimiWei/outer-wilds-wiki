@@ -4,7 +4,7 @@ export const Home = () => {
     return (
         <>
             <Section>
-                amigo estou aqui
+                oi
             </Section>
         </>
     )

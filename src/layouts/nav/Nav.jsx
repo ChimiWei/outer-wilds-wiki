@@ -53,7 +53,7 @@ export const Nav = () => {
 const NavBar = styled.nav`
     display: flex;
     overflow: hidden;
-    background-color: #000000;
+    background-color: #0000007f;
 `;
 
 const LinkList = styled.ul`
