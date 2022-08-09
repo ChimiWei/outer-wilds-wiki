@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { LinkMenu } from "../../components";
-import OWLogo from "../../images/outer-wilds-logo.png"
-import { Link } from "react-router-dom";
+import { HomeLink } from "../../components/homeLink";
+import { CustomLink } from "../../components/customLink";
 
 const links = [
     {
@@ -36,10 +36,14 @@ const links = [
     }
 ]
 
+const homeLink = {
+    to: '/'
+}
+
 export const Nav = () => {
     return (
         <NavBar> 
-            <Link to="/"><LogoImg alt="Outer Wilds" src={OWLogo}/></Link>
+            <HomeLink link={homeLink}></HomeLink>
             
             <LinkList>
                 <LinkMenu links={links}></LinkMenu>
@@ -59,12 +63,6 @@ const NavBar = styled.nav`
 const LinkList = styled.ul`
     display: flex;
 `
-
-const LogoImg = styled.img`
-    max-width: 6vw;
-    padding: 10px 15px;
-`
-
 
 
 

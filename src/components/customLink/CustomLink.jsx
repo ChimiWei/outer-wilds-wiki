@@ -1,17 +1,26 @@
 import styled from "styled-components";
 import { useNavigate, useResolvedPath, useMatch } from "react-router-dom";
-import { useCallback } from "react";
+import { useCallback, useContext } from "react";
+import { FadeOutContext } from "../../app/App";
 
 
 export const CustomLink = ({ link }) => {
     const resolvedPath = useResolvedPath(link.to)
     const isActive = useMatch({ path: resolvedPath.pathname, end: true })
     const navigate = useNavigate();
-    const handleOnClick = useCallback(() => setTimeout(() => {navigate(link.to, {replace: true}), [navigate]}, 1000));
+    const delayedNavigate = useCallback(() => setTimeout(() => {navigate(link.to, {replace: true}), [navigate]}, 1000));
+    const handleOnClick = () => {
+        if(isActive) return
+        delayedNavigate()
+        setFadeOut(true)
+        console.log(fadeOut)
+    }
 
+    
+    const {fadeOut, setFadeOut}= useContext(FadeOutContext)
 
     return (
-        <StyledLink   className={[link.id, (isActive ? "active" : "")]} path={link.to} onClick={handleOnClick} >
+        <StyledLink   className={[link.id, (isActive ? "active" : "")]} onClick={handleOnClick} >
             {link.name}
         </StyledLink>
     )
@@ -19,11 +28,10 @@ export const CustomLink = ({ link }) => {
 
 const StyledLink = styled.a`
     display: inline-block;
-    color: white;
     text-decoration: none;
     text-align: center;
     padding: 21px 12px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
     animation: fadeIn 3s;
 
     @keyframes fadeIn {
@@ -80,16 +88,17 @@ const StyledLink = styled.a`
     }
     &.HT {
         :hover {
-            background: linear-gradient(180deg, #00000073 30%, #c45b0bb8 100%);
+            background: #c45b0b7a;
         }
+
         &.active {
             background: linear-gradient(180deg, #00000073 30%, #c45b0bb8 100%);
         }
-        
     }
+        
     &.QM {
         :hover {
-            background: linear-gradient(180deg, #0f0f0f4d 0%, rgba(160,175,177,0.38699229691876746) 48%, #1d1c1c46 100%);
+            background: #8080807a;
         }
         &.active {
             background: linear-gradient(180deg, #0f0f0f4d 0%, rgba(160,175,177,0.38699229691876746) 48%, #1d1c1c46 100%);

@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         font-family: 'Fira Sans', sans-serif;
         background-image: url(${space});
+        color: white;
     }
 
     ul {
