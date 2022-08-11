@@ -33,6 +33,11 @@ const links = [
         to: "/QuantumMoon",
         name: "Quantum Moon",
         id: "QM"
+    },
+    {
+        to: "/TimberHearth",
+        name: "Timber Hearth",
+        id: "TH"
     }
 ]
 

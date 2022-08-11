@@ -1,6 +1,6 @@
 import { Nav, Footer } from '../layouts/index'
 import { Route, Routes} from 'react-router-dom'
-import { Home, BrittleHollow, DarkBramble, GiantsDeep, 
+import { Home, TimberHearth, BrittleHollow, DarkBramble, GiantsDeep, 
   HourglassTwins, QuantumMoon, TheEye  } from '../pages'
 import { useState, createContext, useEffect } from 'react';
 
@@ -24,6 +24,8 @@ function App() {
       <Nav />
       <Routes>
         <Route path='/' element={<Home />}>
+        </Route>
+        <Route path='/TimberHearth' element={<TimberHearth />}>
         </Route>
         <Route path='/BrittleHollow' element={<BrittleHollow />}>
         </Route>

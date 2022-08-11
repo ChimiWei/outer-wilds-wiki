@@ -1,3 +1,4 @@
+export * from './TimberHearth'
 export * from './BrittleHollow';
 export * from './DarkBramble';
 export * from './GiantsDeep';

@@ -86,6 +86,15 @@ const StyledLink = styled.a`
         }
         
     }
+    &.TH {
+        :hover {
+            background-color: #71f15152;
+        }
+        &.active {
+            background-color: #71f15152;
+        }
+        
+    }
     &.HT {
         :hover {
             background: #c45b0b7a;

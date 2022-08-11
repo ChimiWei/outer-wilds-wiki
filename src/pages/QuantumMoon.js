@@ -9,7 +9,7 @@ export const QuantumMoon = () => {
     return (
         <>
             <Section className={fadeOut ? 'fade-out' : ''}>
-                <PlanetIMG alt="Quantum Moon" src={QMimg} size={24}  />
+                <PlanetIMG alt="Quantum Moon" src={QMimg} size={30}  />
             </Section>
         </>
     )
