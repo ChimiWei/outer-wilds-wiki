@@ -27,7 +27,7 @@ export const CustomLink = ({ link }) => {
 }
 
 const StyledLink = styled.a`
-    display: inline-block;
+    display: block;
     text-decoration: none;
     text-align: center;
     padding: 21px 12px;

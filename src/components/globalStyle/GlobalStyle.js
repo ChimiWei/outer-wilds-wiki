@@ -15,4 +15,12 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
     }
+
+    button {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        color: none;
+        background: none;
+    }
 `

@@ -9,7 +9,7 @@ export const TimberHearth = () => {
     return (
         <>
             <Section className={fadeOut ? 'fade-out' : ''}>
-               <PlanetIMG alt="Timber Hearth" src={THimg} size={60}  /> 
+               <PlanetIMG alt="Timber Hearth" src={THimg} size={30}  /> 
             </Section>
         </>
     )
