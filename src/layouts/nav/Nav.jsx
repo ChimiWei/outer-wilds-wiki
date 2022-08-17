@@ -55,44 +55,66 @@ export const Nav = () => {
     }
     return (
         <NavBar> 
+            
             <HomeLink link={homeLink}></HomeLink>
             
-            <LinkList>
-                <LinkMenu links={links}></LinkMenu>
-            </LinkList>
             <MenuDrop>
             <MenuBtn onClick={handleClick}>
                 <MenuIcon className={(isActive ? "active" : "")}>   
                 </MenuIcon>
             </MenuBtn>
             </MenuDrop>
+
+
+            <LinkList>
+                <LinkMenu links={links}></LinkMenu>
+            </LinkList>
+           
             
         </NavBar>
     );
 };
 
 const NavBar = styled.nav`
-    display: flex;
+    
     
     background-color: #0000007f;
+
+    @media screen and (min-width: 920px) {
+        display: flex;
+    }
 `;
 
 const LinkList = styled.ul`
     display: flex;
+    
+
+    @media screen and (max-width: 920px){
+        flex-direction: column;
+        justify-content: right;
+        align-items: right;
+        text-align: right;
+
+        .dropped {
+            
+        }
+        
+            
+    }
 `
 
 const MenuDrop = styled.div`
-    display: flex;
+    display: block;
+    float: right;
     justify-content: center;
     align-items: center;
-`
+
+    @media screen and (min-width: 920px) {
+        display: none;
+    }
+ `
 const MenuBtn = styled.button`
     --menu-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 0%;
     width: var(--menu-size);
     height: var(--menu-size);  
     cursor: pointer;
@@ -131,8 +153,7 @@ const MenuIcon = styled.i`
         transform: rotate(-45deg);
     }
     
-`
-
+` 
 
 
 

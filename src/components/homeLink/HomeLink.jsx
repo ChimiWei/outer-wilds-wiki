@@ -21,7 +21,7 @@ export const HomeLink = ({ link }) => {
     const {fadeOut, setFadeOut}= useContext(FadeOutContext)
 
     return (
-        <StyledLink   className={[link.id, (isActive ? "active" : "")]} onClick={handleOnClick} >
+        <StyledLink  onClick={handleOnClick} >
             <LogoImg alt="Outer Wilds" src={OWLogo}/>
         </StyledLink>
     )
@@ -30,6 +30,12 @@ export const HomeLink = ({ link }) => {
 const StyledLink = styled.a`
     transition: all 0.4s ease-in-out;
     animation: fadeIn 3s;
+
+    @media screen and (max-width: 920px) {
+        float: none;
+        display: inline-block;
+
+    }
 
     @keyframes fadeIn {
         0% {
@@ -50,7 +56,12 @@ const StyledLink = styled.a`
 
 const LogoImg = styled.img`
     max-width: 6vw;
-    padding: 10px 15px;
+    padding: 10px 15px 0px;
+
+    @media screen and (max-width: 920px) {
+        max-width: 10vw;
+    }
+    
 `
 
 

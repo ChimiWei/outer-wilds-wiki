@@ -22,5 +22,10 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         color: none;
         background: none;
+        border-style: none;
+        
+        :active {
+            border-style: none;
+        }
     }
 `

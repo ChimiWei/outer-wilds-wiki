@@ -34,6 +34,16 @@ const StyledLink = styled.a`
     transition: all 0.4s ease-in-out;
     animation: fadeIn 3s;
 
+    @media screen and (max-width: 920px) {
+        display: inline-block;
+        font-size: 0.7em;
+        padding: 10px 12px;
+        text-align: right;
+        
+        
+
+    }
+
     @keyframes fadeIn {
         0% {
             opacity: 0;
