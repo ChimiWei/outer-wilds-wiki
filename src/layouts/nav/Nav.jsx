@@ -66,8 +66,8 @@ export const Nav = () => {
             </MenuDrop>
 
 
-            <LinkList>
-                <LinkMenu links={links}></LinkMenu>
+            <LinkList className={(isActive ? "dropped" : "")}>
+                <LinkMenu  links={links}></LinkMenu>
             </LinkList>
            
             
@@ -87,16 +87,17 @@ const NavBar = styled.nav`
 
 const LinkList = styled.ul`
     display: flex;
-    
+    transition: all 0.5s ease-in-out;
 
     @media screen and (max-width: 920px){
         flex-direction: column;
-        justify-content: right;
-        align-items: right;
-        text-align: right;
+        position: absolute;
+        right: -30%;
+        opacity: 0;
 
-        .dropped {
-            
+        &.dropped {
+        right: 0%;
+        opacity: 1;
         }
         
             

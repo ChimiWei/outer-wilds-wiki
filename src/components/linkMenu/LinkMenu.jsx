@@ -9,7 +9,7 @@ export const LinkMenu = ({ links }) => {
 
     return (
         <>
-            {links.map(link => (<li style={{display: 'inline-block'}} key={link.id}><CustomLink link={link} ></CustomLink></li>))}
+            {links.map(link => (<li style={{}} key={link.id}><CustomLink link={link} ></CustomLink></li>))}
         </>
     )
 }

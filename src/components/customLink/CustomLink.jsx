@@ -39,7 +39,8 @@ const StyledLink = styled.a`
         font-size: 0.7em;
         padding: 10px 12px;
         text-align: right;
-        
+        width: 82px;
+        position: relative;
         
 
     }
