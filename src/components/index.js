@@ -1,3 +1,7 @@
 export * from './globalStyle'
 export * from './linkMenu'
 export * from './planetImg'
+export * from './customLink'
+export * from './homeLink'
+export * from './scifiText'
+export * from './textBox'

@@ -1,5 +1,5 @@
 import { Section } from "../layouts";
-import { PlanetIMG } from "../components";
+import { PlanetIMG, TextBox, ScifiText } from "../components";
 import THimg from '../images/planets/Timber_Hearth.png'
 import { FadeOutContext } from "../app/App";
 import { useContext } from "react";
@@ -10,6 +10,14 @@ export const TimberHearth = () => {
         <>
             <Section className={fadeOut ? 'fade-out' : ''}>
                <PlanetIMG alt="Timber Hearth" src={THimg} size={30}  /> 
+               <TextBox>
+                    <ScifiText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo viverra, 
+                    commodo enim sit amet, rutrum orci. 
+                    Pellentesque habitant morbi tristique senectus et netus et 
+                    malesuada fames ac turpis egestas
+                    </ScifiText>
+                </TextBox>
             </Section>
         </>
     )
