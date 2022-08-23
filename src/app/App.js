@@ -4,6 +4,9 @@ import { Home, TimberHearth, BrittleHollow, DarkBramble, GiantsDeep,
   HourglassTwins, QuantumMoon, TheEye  } from '../pages'
 import { useState, createContext, useEffect } from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { brands } from '@fortawesome/fontawesome-svg-core/import.macro'
+
 export const FadeOutContext = createContext();
 
 function App() {
@@ -41,7 +44,13 @@ function App() {
         </Route>
       </Routes>
       </ FadeOutContext.Provider>
-      <Footer> footer </Footer>
+      <Footer> 
+        
+        <div> <FontAwesomeIcon icon={brands('linkedin')} /> </div> 
+        <div> outer wilds </div>
+        <div> github </div> 
+        
+      </Footer>
     
     </>
   );

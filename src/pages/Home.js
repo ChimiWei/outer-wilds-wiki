@@ -10,7 +10,15 @@ export const Home = () => {
     
     return (
         <>
-            <HomeSection>
+            <HomeSection className={fadeOut ? 'fade-out' : ''}>
+                <TextBox>
+                    <ScifiText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo viverra, 
+                    commodo enim sit amet, rutrum orci. 
+                    Pellentesque habitant morbi tristique senectus et netus et 
+                    malesuada fames ac turpis egestas
+                    </ScifiText>
+                </TextBox>
                 <TextBox>
                     <ScifiText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo viverra, 
@@ -26,6 +34,7 @@ export const Home = () => {
 
 
 const HomeSection = styled(Section)`
+    justify-content: space-around;
     background: url(${solarSys}) no-repeat;
     background-size: 100% auto;
     width: 80%;

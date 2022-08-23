@@ -48,7 +48,8 @@ const homeLink = {
 export const Nav = () => {
     const [menuDrop, setMenuDrop] = useState(false);
 
-    const isActive = menuDrop
+    const isActive = menuDrop;
+
     const handleClick = () => {
         setMenuDrop(!menuDrop)
         console.log(menuDrop)
