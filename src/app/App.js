@@ -47,9 +47,9 @@ function App() {
       </ FadeOutContext.Provider>
       <Footer> 
         <GridContainer>
-        <GridItem href='#'> <FontAwesomeIcon icon={brands('linkedin')} /> </GridItem> 
+        <GridItem href='https://www.linkedin.com/in/wei-oliveira' > <FontAwesomeIcon icon={brands('linkedin')} /> </GridItem> 
         <GridItem> outer wilds </GridItem>
-        <GridItem> <FontAwesomeIcon icon={brands('github')} /> </GridItem> 
+        <GridItem href='https://github.com/ChimiWei'> <FontAwesomeIcon icon={brands('github')} /> </GridItem> 
         </GridContainer>
       </Footer>
     

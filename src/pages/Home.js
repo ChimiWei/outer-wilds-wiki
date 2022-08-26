@@ -16,13 +16,11 @@ export const Home = () => {
                 </PlanetIMG>
                 <TextBox>
                     <ScifiText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo viverra, 
-                    commodo enim sit amet, rutrum orci. 
-                    Pellentesque habitant morbi tristique senectus et netus et 
-                    malesuada fames ac turpis egestas
+                    The <strong>Solar System</strong>, also referred as <strong>Outer Wilds</strong>. 
+                    At the centre of the solar system is the <strong>Sun</strong> orbited by five planets
+                    and numerous other astronomical bodies. When reaching the end of its life cycle,
+                    the star grows before eventually collapsing under its own gravity and exploding in a violent Supernova.
                     </ScifiText>
-                </TextBox>
-                <TextBox>
                     <ScifiText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo viverra, 
                     commodo enim sit amet, rutrum orci. 

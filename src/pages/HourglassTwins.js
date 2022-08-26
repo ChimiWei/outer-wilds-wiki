@@ -12,10 +12,12 @@ export const HourglassTwins = () => {
                <PlanetIMG alt="Hourglass Twins" src={HTimg} size={25}  /> 
                <TextBox>
                     <ScifiText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo viverra, 
-                    commodo enim sit amet, rutrum orci. 
-                    Pellentesque habitant morbi tristique senectus et netus et 
-                    malesuada fames ac turpis egestas
+                   <strong>The Hourglass Twins</strong> are two planets in a binary orbit with each other.  
+                    <strong> Ash Twin</strong> is a seemingly barren sand planet and <strong>Ember Twin</strong> is a rocky desert planet with an expansive cave system.
+                    </ScifiText>
+                    <ScifiText>
+                    As time progresses, Ash Twin transfers its sand to Ember Twin, causing ancient Nomai architecture buried in Ash Twin to be revealed, 
+                    while Ember Twin's cave network slowly fills with sand and becomes inaccessible.
                     </ScifiText>
                 </TextBox>
             </Section>

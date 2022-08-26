@@ -13,10 +13,13 @@ export const BrittleHollow = () => {
                 <PlanetIMG alt="Brittle Hollow" src={BHpic} size={30}/>
                 <TextBox>
                     <ScifiText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo viverra, 
-                    commodo enim sit amet, rutrum orci. 
-                    Pellentesque habitant morbi tristique senectus et netus et 
-                    malesuada fames ac turpis egestas
+                    <strong>Brittle Hollow</strong> is a hollow rocky planet with a black hole at the core, 
+                    with many structures embedded across both the surface and the underside of its fragile crust. 
+                    </ScifiText>
+                    <ScifiText>
+                    As time progresses, bombardment from the planet's moon, <strong>Hollow's Lantern</strong>, 
+                    causes large chunks of the planet to break off and fall through the black hole, 
+                    emerging from the white hole at the system's outskirts.
                     </ScifiText>
                 </TextBox>
             </Section>

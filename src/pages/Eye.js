@@ -12,10 +12,13 @@ export const TheEye = () => {
                 <PlanetIMG alt="The Eye" src={EYEimg} size={35}  />
                 <TextBox>
                     <ScifiText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo viverra, 
-                    commodo enim sit amet, rutrum orci. 
-                    Pellentesque habitant morbi tristique senectus et netus et 
-                    malesuada fames ac turpis egestas
+                    The <strong>Eye of the Universe</strong> is a planetary object older than the universe itself which is in a distant orbit around the Sun.
+                    It is a highly quantum object, being made of the same unknown quantum material that the various <strong>Quantum Shards</strong> are made of.
+                    </ScifiText>
+                    <ScifiText>
+                    Visually, the <strong>Eye</strong> looks like a dark planet with a purple storm surrounding it. 
+                    Occasional lightning strikes can be observed as well. 
+                    Strange branches fan out from the planet into the storm. 
                     </ScifiText>
                 </TextBox>
             </Section>

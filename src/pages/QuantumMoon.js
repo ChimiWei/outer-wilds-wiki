@@ -12,10 +12,9 @@ export const QuantumMoon = () => {
                 <PlanetIMG alt="Quantum Moon" src={QMimg} size={30}  />
                 <TextBox>
                     <ScifiText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo viverra, 
-                    commodo enim sit amet, rutrum orci. 
-                    Pellentesque habitant morbi tristique senectus et netus et 
-                    malesuada fames ac turpis egestas
+                    The <strong>Quantum Moon</strong> is a mysterious moon with macroscopic quantum properties, 
+                    appearing in orbit around different planets and vanishing when unobserved. 
+                    Unreachable by normal means, landing on the Quantum Moon is a mystery unto itself.
                     </ScifiText>
                 </TextBox>
             </Section>

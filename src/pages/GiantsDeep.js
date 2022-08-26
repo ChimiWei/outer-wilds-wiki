@@ -12,10 +12,8 @@ export const GiantsDeep = () => {
                 <PlanetIMG alt="Giant's Deep" src={GDimg} size={30}  />
                 <TextBox>
                     <ScifiText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo viverra, 
-                    commodo enim sit amet, rutrum orci. 
-                    Pellentesque habitant morbi tristique senectus et netus et 
-                    malesuada fames ac turpis egestas
+                    <strong>Giant's Deep</strong> is a large aquatic planet with a deep worldwide ocean, strong gravity, swirling cyclones and a strong upwards water current. 
+                    It has several islands that freely drift across the planet and are occasionally thrown into suborbital trajectories by passing cyclones.
                     </ScifiText>
                 </TextBox>
             </Section>

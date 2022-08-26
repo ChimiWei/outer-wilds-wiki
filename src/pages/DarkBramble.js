@@ -12,10 +12,12 @@ export const DarkBramble = () => {
                <PlanetIMG alt="Dark Bramble" src={DBimg} size={30}  /> 
                <TextBox>
                     <ScifiText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo viverra, 
-                    commodo enim sit amet, rutrum orci. 
-                    Pellentesque habitant morbi tristique senectus et netus et 
-                    malesuada fames ac turpis egestas
+                    <strong>Dark Bramble</strong> is a frozen malevolent mass of twisted vines, foggy rooms and a confusing portal network that warps conventional spacetime, 
+                    inhabited by hostile <strong>Anglerfish</strong>. 
+                    </ScifiText>
+
+                    <ScifiText>
+                    It was originally an ocean planet before being infected with dark and twisted vines that tore the planet apart.
                     </ScifiText>
                 </TextBox>
             </Section>
