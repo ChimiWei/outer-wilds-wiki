@@ -5,8 +5,8 @@ export const Section = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
+    
+    min-height: 625px;
     animation: fadeIn 3s;
 
     @keyframes fadeIn {

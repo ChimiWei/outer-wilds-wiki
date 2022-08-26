@@ -8,4 +8,8 @@ export const ScifiText = styled.p`
         content: "— ";
         color: #7b9ad3fc;
     }
+
+    @media screen and (max-width: 920px) {
+        font-size: 0.8em;
+    }
 `

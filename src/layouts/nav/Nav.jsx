@@ -83,6 +83,7 @@ const NavBar = styled.nav`
 
     @media screen and (min-width: 920px) {
         display: flex;
+        
     }
 `;
 
@@ -91,12 +92,14 @@ const LinkList = styled.ul`
     transition: all 0.5s ease-in-out;
 
     @media screen and (max-width: 920px){
+        
         flex-direction: column;
         position: absolute;
         right: -30%;
         opacity: 0;
-
+      
         &.dropped {
+        
         right: 0%;
         opacity: 1;
         }

@@ -1,9 +1,10 @@
 import { Nav, Footer } from '../layouts/index'
+import { GridContainer, GridItem } from '../components';
 import { Route, Routes} from 'react-router-dom'
 import { Home, TimberHearth, BrittleHollow, DarkBramble, GiantsDeep, 
   HourglassTwins, QuantumMoon, TheEye  } from '../pages'
 import { useState, createContext, useEffect } from 'react';
-
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands } from '@fortawesome/fontawesome-svg-core/import.macro'
 
@@ -22,7 +23,7 @@ function App() {
   }
   , [fadeOut])
   return (
-    <>
+    <MobileBody>
     <FadeOutContext.Provider value={contextValue}>
       <Nav />
       <Routes>
@@ -45,15 +46,23 @@ function App() {
       </Routes>
       </ FadeOutContext.Provider>
       <Footer> 
-        
-        <div> <FontAwesomeIcon icon={brands('linkedin')} /> </div> 
-        <div> outer wilds </div>
-        <div> github </div> 
-        
+        <GridContainer>
+        <GridItem href='#'> <FontAwesomeIcon icon={brands('linkedin')} /> </GridItem> 
+        <GridItem> outer wilds </GridItem>
+        <GridItem> <FontAwesomeIcon icon={brands('github')} /> </GridItem> 
+        </GridContainer>
       </Footer>
     
-    </>
+    </ MobileBody>
   );
 }
 
+
+const MobileBody = styled.div`
+  @media screen and (max-width: 920px) {
+      overflow-x: hidden;
+      position: relative;
+      }
+  
+`
 export default App;

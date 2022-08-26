@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Section } from "../layouts";
-import { ScifiText, TextBox } from "../components";
+import { ScifiText, TextBox, PlanetIMG } from "../components";
 import { FadeOutContext } from "../app/App";
 import { useContext } from "react";
 import solarSys from '../images/Solar_system_map.png'
@@ -11,6 +11,9 @@ export const Home = () => {
     return (
         <>
             <HomeSection className={fadeOut ? 'fade-out' : ''}>
+                <PlanetIMG src={solarSys} size={60}>
+
+                </PlanetIMG>
                 <TextBox>
                     <ScifiText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo viverra, 
@@ -34,10 +37,13 @@ export const Home = () => {
 
 
 const HomeSection = styled(Section)`
-    justify-content: space-around;
-    background: url(${solarSys}) no-repeat;
+
     background-size: 100% auto;
     width: 80%;
-    height: 55vw;
+    height: fit-content;
     margin: auto;
+
+    @media screen and (max-width: 920px) {
+        
+    }
 `
