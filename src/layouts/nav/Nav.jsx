@@ -42,7 +42,7 @@ const links = [
 ]
 
 const homeLink = {
-    to: '/'
+    to: '/outer-wilds-wiki'
 }
 
 export const Nav = () => {
