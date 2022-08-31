@@ -27,7 +27,7 @@ function App() {
     <FadeOutContext.Provider value={contextValue}>
       <Nav />
       <Routes>
-        <Route path='/' element={<Home />}>
+        <Route path='/outer-wilds-wiki/' element={<Home />}>
         </Route>
         <Route path='/TimberHearth' element={<TimberHearth />}>
         </Route>

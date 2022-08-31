@@ -9,7 +9,7 @@ module.exports = {
     entry: './src/index.js',
     mode: 'development',
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'docs'),
         filename: 'bundler.js'
     },
     plugins: [new HtmlWebpackPlugin({
