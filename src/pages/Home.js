@@ -22,10 +22,9 @@ export const Home = () => {
                     the star grows before eventually collapsing under its own gravity and exploding in a violent Supernova.
                     </ScifiText>
                     <ScifiText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo viverra, 
-                    commodo enim sit amet, rutrum orci. 
-                    Pellentesque habitant morbi tristique senectus et netus et 
-                    malesuada fames ac turpis egestas
+                    The system was discovered by the <strong>Nomai</strong> civilization on their search for the Eye,
+                    and in the middle of their research the orbit was infected by an extremely hazardous substance called <strong>Ghost Matter</strong>,
+                    ending all Nomai life within the solar system.
                     </ScifiText>
                 </TextBox>
             </HomeSection>
