@@ -11,9 +11,9 @@ export const Home = () => {
     return (
         <>
             <HomeSection className={fadeOut ? 'fade-out' : ''}>
-                <PlanetIMG src={solarSys} size={60}>
+                <ChartIMG src={solarSys} />
 
-                </PlanetIMG>
+
                 <TextBox>
                     <ScifiText>
                     The <strong>Solar System</strong>, also referred as <strong>Outer Wilds</strong>. 
@@ -43,4 +43,8 @@ const HomeSection = styled(Section)`
     @media screen and (max-width: 920px) {
         
     }
+`
+const ChartIMG = styled.img`
+    max-width: 60vw;
+
 `
