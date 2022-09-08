@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Section } from "../layouts";
-import { ScifiText, TextBox, PlanetIMG } from "../components";
+import { ScifiText, TextBox } from "../components";
 import { FadeOutContext } from "../app/App";
 import { useContext } from "react";
 import solarSys from '../images/Solar_system_map.png'

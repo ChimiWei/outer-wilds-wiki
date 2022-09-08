@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const PlanetIMG = styled.img`
     max-width: ${props => props.size}vw;
-    animation: rotate 100s linear infinite;
+    animation: rotate 333s linear infinite;
     -webkit-animation: rotate 100s linear infinite;
   @keyframes rotate {
     from {
