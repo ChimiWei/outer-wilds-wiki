@@ -39,8 +39,6 @@ function App() {
         </Route>
         <Route path='/HourglassTwins' element={<HourglassTwins />}>
         </Route>
-        <Route path='/TheEye' element={<TheEye />}>
-        </Route>
         <Route path='/QuantumMoon' element={<QuantumMoon />}>
         </Route>
       </Routes>
